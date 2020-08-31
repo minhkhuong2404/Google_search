@@ -1,0 +1,235 @@
+:root {
+    font-size: 10px;
+    font-family: arial, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-nav a,
+.right-nav a {
+    line-height: 5rem;
+}
+
+.left-nav a {
+    opacity: 0.75;
+}
+
+.left-nav li {
+    margin-left: 2rem;
+}
+
+.right-nav li {
+    margin-right: 2rem;
+}
+
+#apps {
+    display: inline-block;
+    background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+    background-position-x: -132px;
+    background-position-y: -38px;
+    background-size: 528px 68px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    opacity: 0.55;
+}
+
+#apps:hover {
+    opacity: 1;
+}
+
+.right-nav li button {
+    vertical-align: middle;
+    color: white;
+    font-weight: 900;
+    background-color: rgb(67, 135, 253);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0 1rem;
+    line-height: 3.2rem;
+}
+
+.right-nav li button:hover {
+    box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.hover-grey:hover {
+    opacity: 0.85;
+}
+
+#logo {
+    width: 100vw;
+    height: 25.5vh;
+    
+    background-image: url(https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    margin-bottom: 2.5rem;
+}
+
+#search {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "searchbox searchbox"
+        "button1 button2"
+        "change change";
+}
+
+#search-container {
+    grid-area: searchbox;
+    justify-self: center;
+    width: 58rem;
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 2.4rem;
+}
+
+#search-container:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+#search input[type="text"] {
+    line-height: 3.4rem;
+    width: 38.7rem;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-size: 1.6rem;
+}
+
+#search input[type="text"]:focus {
+    outline: none;
+}
+
+#submit {
+    grid-area: button1;
+    justify-self: right;
+    margin-top:2rem;
+}
+
+#lucky {
+    grid-area: button2;
+    justify-self: left;
+    margin-top:2rem;
+}
+
+#change {
+    grid-area: change;
+    justify-self: center;
+    margin-top:2rem;
+}
+
+#change a {
+    color: blue;
+}
+
+#magnifyer {
+    line-height: 2.4rem;
+    width: 2rem;
+    fill: rgb(154, 160, 166);
+    margin-left: 1.5rem;
+}
+
+#voice {
+    line-height: 4.4rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-right: 1.5rem;
+    margin-top:0.5rem;
+}
+
+.buttons {
+    background-color: #F2F2F2;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: rgb(95, 99, 104);
+    text-align: center;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 1.4rem;
+}
+
+.buttons:hover {
+    border: 1px solid #c6c6c6;
+    color: #222;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+}
+
+.buttons:focus {
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgb(242, 242, 242);
+}
+
+#country {
+    padding-left: 2.8rem;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.5rem;
+    height: 4rem;
+    line-height: 4rem;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+#bottom-nav {
+    padding-left: 0.8rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+#bottom-nav a {
+    color: #0a0b0e;
+    font-size: 1.5rem;
+    opacity: 0.55;
+}
